@@ -1,0 +1,29 @@
+@extends('layouts.app')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/general/index.css') }}" />
+@endsection
+
+@section('header')
+@include('layouts.header_auth_user')
+@endsection
+
+@section('content')
+<div class="index__container">
+    <div class="attendance__block">
+        <div class="attendance__status--block">
+            <div class="attendance__status--display">出勤中</div>
+        </div>
+        <div class="attendance__date--block">
+            <livewire:date :currentDate="$currentDate" />
+        </div>
+        <div class="attendance__time--block">
+            <livewire:clock :currentTime="$currentTime" />
+        </div>
+        <div class="attendance__button--block">
+            <a href="{{ route('attend_end') }}" class="attendance__button--display">退勤</a>
+            <a href="{{ route('rest_start') }}" class="attendance-rest__button--display">休憩入</a>
+        </div>
+    </div>
+</div>
+@endsection

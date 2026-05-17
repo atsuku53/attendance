@@ -1,0 +1,121 @@
+.index__container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e5e5;
+}
+
+.attendance__block {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.attendance__status--block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.attendance__status--display {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #696969;
+    background-color: #C8C8C8;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.attendance__date--block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.attendance__date--display {
+    font-size: 40px;
+}
+
+.attendance__time--block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.attendance__time--display {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.attendance__button--block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.attendance__button--display {
+    width: 221px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.attendance-rest__button--display {
+    width: 221px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.attendance__message--block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.attendance__message--display {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
