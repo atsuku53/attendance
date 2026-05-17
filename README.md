@@ -18,10 +18,14 @@ DB_PORT=3306
 DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
+
+//中略
+
+MAIL_FROM_ADDRESS="hello@example.com"
 ```
+- 権限エラーが出る場合に実行　sudo chmod -R 777 ./
 - php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
+- php artisan migrate:fresh --seed
 
 ## 使用技術（実行環境）
 - PHP 8.1
@@ -73,18 +77,13 @@ tests/Feature/以下
 
 ### 以下のコマンドを実行
 ```
-//テスト用データベースの作成
-docker-compose exec mysql bash
-mysql -u root -p
-//パスワードはrootと入力
-create database demo_test;
-
 docker-compose exec php bash
 php artisan migrate:fresh --env=testing
 php artisan test //各テストファイルを指定
 ```
 
 ## URL
-- 開発環境: http://localhost/
+- スタッフ用トップページ: http://localhost/attendance
+- 管理者用トップページ: http://localhost/admin/attendance/list
 - phpMyAdmin: http://localhost:8080/
 - MailHog: http://localhost:8025/
