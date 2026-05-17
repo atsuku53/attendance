@@ -71,7 +71,7 @@ MAIL_FROM_ADDRESS="hello@example.com"
 ## PHPUnitを利用したテストに関して
 ### テストファイル
 tests/Feature/以下
-- ユーザー登録（スタッフ・管理者）：RegisterTest.php
+- ユーザー登録：RegisterTest.php
 - ログイン（スタッフ・管理者）：LoginTest.php
 - その他の各操作テスト：AttendanceTest.php
 
